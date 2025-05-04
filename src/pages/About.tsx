@@ -55,7 +55,7 @@ const About = () => {
           <div>
             <FeaturedQuote 
               quote="Islanema isn't just about changing how Muslims are portrayed in film and television—it's about reviving a tradition of storytelling that nurtures the soul while delighting the senses."
-              author="Ismail Abdullah"
+              author="Faical Benhaida"
               source="Founder, Islanema Film Academy"
             />
             
@@ -358,7 +358,7 @@ const About = () => {
           <div className="mt-12 text-center">
             <FeaturedQuote 
               quote="Islanema isn't just an educational institution—it's a movement to reclaim our narrative, honor our tradition, and shape the stories that will influence generations to come."
-              author="Ismail Abdullah"
+              author="Faical Benhaida"
               source="Founder, Islanema Film Academy"
             />
           </div>
