@@ -1,22 +1,17 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import Citation from '@/components/Citation';
 
 interface StatCardProps {
   number: string;
   description: string;
   color?: string;
-  sourceId?: string; // Add reference to the source
-  page?: string; // Optional page number
 }
 
 const StatCard: React.FC<StatCardProps> = ({ 
   number, 
   description, 
   color = "bg-islanema-green",
-  sourceId,
-  page
 }) => {
   return (
     <Card className="relative overflow-hidden bg-white p-6 h-full">
@@ -27,9 +22,6 @@ const StatCard: React.FC<StatCardProps> = ({
         </h3>
         <p className="text-gray-600 mt-2">
           {description}
-          {sourceId && (
-            <Citation sourceId={sourceId} page={page} className="ml-1" />
-          )}
         </p>
       </div>
     </Card>

@@ -44,7 +44,7 @@ const CallToActionBanner: React.FC<CallToActionBannerProps> = ({
           <p className="text-lg mb-8 opacity-90">{description}</p>
           <Button 
             asChild
-            className="bg-islanema-gold hover:bg-white text-black hover:text-islanema-blue text-lg px-8 py-6 h-auto"
+            className="bg-white text-black hover:bg-islanema-blue hover:text-white text-lg px-8 py-6 h-auto"
           >
             <Link to={buttonLink}>{buttonText}</Link>
           </Button>
