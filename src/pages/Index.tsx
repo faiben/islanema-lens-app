@@ -45,7 +45,7 @@ const Index = () => {
               <Button 
                 asChild
                 variant="outline" 
-                className="border-white text-white hover:bg-white/20 hover:text-white text-lg px-8 py-6 h-auto"
+                className="border-white text-black hover:bg-white/20 hover:text-white text-lg px-8 py-6 h-auto"
               >
                 <Link to="/trends">Explore Media Trends</Link>
               </Button>
