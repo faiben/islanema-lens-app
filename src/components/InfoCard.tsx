@@ -10,12 +10,7 @@ interface InfoCardProps {
   className?: string;
 }
 
-const InfoCard: React.FC<InfoCardProps> = ({ 
-  title, 
-  description, 
-  icon, 
-  className,
-}) => {
+const InfoCard: React.FC<InfoCardProps> = ({ title, description, icon, className }) => {
   return (
     <Card className={cn("p-6 border-none shadow-md h-full transition-transform hover:translate-y-[-5px]", className)}>
       <div className="flex flex-col items-center text-center">
@@ -23,9 +18,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
           {icon}
         </div>
         <h3 className="text-xl font-serif font-medium mb-2">{title}</h3>
-        <p className="text-gray-600">
-          {description}
-        </p>
+        <p className="text-gray-600">{description}</p>
       </div>
     </Card>
   );

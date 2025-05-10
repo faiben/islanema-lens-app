@@ -1,19 +1,14 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import { sources } from '@/lib/citations';
 
 interface FeaturedQuoteProps {
   quote: string;
   author: string;
   source?: string;
-  sourceId?: string; // Added field for citation
 }
 
-const FeaturedQuote: React.FC<FeaturedQuoteProps> = ({ quote, author, source, sourceId }) => {
-  // Get publication year if sourceId is provided
-  const publicationYear = sourceId && sources[sourceId] ? sources[sourceId].year : null;
-  
+const FeaturedQuote: React.FC<FeaturedQuoteProps> = ({ quote, author, source }) => {
   return (
     <Card className="bg-islanema-cream border-none p-8">
       <div className="flex flex-col items-center text-center">
@@ -23,22 +18,7 @@ const FeaturedQuote: React.FC<FeaturedQuoteProps> = ({ quote, author, source, so
         </blockquote>
         <div className="font-medium text-gray-700">
           &mdash; {author}
-          {(source || publicationYear) && (
-            <span className="block text-sm text-gray-500 mt-1">
-              {source}
-              {publicationYear && `, ${publicationYear}`}
-              {sourceId && sources[sourceId]?.url && (
-                <a 
-                  href={sources[sourceId].url} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="ml-2 text-islanema-blue hover:underline"
-                >
-                  [Source]
-                </a>
-              )}
-            </span>
-          )}
+          {source && <span className="block text-sm text-gray-500 mt-1">{source}</span>}
         </div>
       </div>
     </Card>

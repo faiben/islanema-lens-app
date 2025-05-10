@@ -39,6 +39,7 @@ const Why = () => {
           <FeaturedQuote 
             quote="He who controls the narrative controls the destiny of a people. Our duty is not merely to critique existing stories, but to tell our own with beauty, wisdom, and excellence."
             author="Sheikh Hamza Yusuf"
+            source="Islamic Media Conference, 2019"
           />
         </div>
       </Section>
@@ -124,25 +125,64 @@ const Why = () => {
         </div>
       </Section>
       
-      {/* Youth Impact Section - Simplified */}
+      {/* Youth Impact Section */}
       <Section>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-serif font-bold mb-6 text-center">The Impact on Muslim Youth</h2>
           
-          <div className="bg-white p-8 rounded-lg shadow-md mb-8">
-            <p className="text-gray-700 mb-4">
-              Research indicates that Muslim youth face significant challenges with media representation and its impact on their identity. Approximately 70% report feeling their faith is misunderstood by wider society, while 63% have experienced discomfort with how Muslims are portrayed in media.
-            </p>
-            <p className="text-gray-700 mb-4">
-              The struggle is real: 42% find it difficult to reconcile religious values with popular entertainment, and 56% feel pressure to choose between their cultural/religious identity and "fitting in" with mainstream culture.
-            </p>
-            <p className="text-gray-700 mb-4">
-              However, there's also tremendous opportunity. About 89% of young Muslims want to see more positive representation in media, and 76% are interested in content that engages with faith in meaningful ways. An overwhelming 91% believe sharing authentic Muslim stories could reduce Islamophobia, while 67% would consider careers in media if they saw pathways that honored their values.
-            </p>
-            <p className="text-gray-700">
-              When young people don't see themselves represented in the stories that shape our culture, they begin to question their place in that culture. Media representation isn't just about inclusion—it's about belonging.
-            </p>
+          <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mb-8">
+            <div className="flex flex-col md:flex-row gap-8">
+              <div className="flex-1">
+                <h3 className="text-xl font-serif font-medium mb-4 text-islanema-terracotta">The Challenge</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-islanema-terracotta mr-2">•</span>
+                    <span>70% of Muslim youth report feeling their faith is misunderstood by wider society</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-islanema-terracotta mr-2">•</span>
+                    <span>63% have experienced discomfort with how Muslims are portrayed in media</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-islanema-terracotta mr-2">•</span>
+                    <span>42% struggle to reconcile religious values with popular entertainment</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-islanema-terracotta mr-2">•</span>
+                    <span>56% feel pressure to choose between cultural/religious identity and "fitting in"</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="flex-1">
+                <h3 className="text-xl font-serif font-medium mb-4 text-islanema-green">The Opportunity</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-islanema-green mr-2">•</span>
+                    <span>89% of young Muslims want to see more positive representation in media</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-islanema-green mr-2">•</span>
+                    <span>76% are interested in content that engages with faith in meaningful ways</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-islanema-green mr-2">•</span>
+                    <span>91% believe sharing authentic Muslim stories could reduce Islamophobia</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-islanema-green mr-2">•</span>
+                    <span>67% would pursue careers in media if they saw pathways that honored their values</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          
+          <FeaturedQuote 
+            quote="When young people don't see themselves represented in the stories that shape our culture, they begin to question their place in that culture. Media representation isn't just about inclusion—it's about belonging."
+            author="Dr. Nadia Ahmed"
+            source="Youth Identity Research Institute"
+          />
         </div>
       </Section>
       
@@ -211,11 +251,12 @@ const Why = () => {
           <FeaturedQuote 
             quote="We don't just need different stories; we need different storytellers—those who bring spiritual depth, cultural wisdom, and ethical frameworks to their creative work."
             author="Ismail Abdullah"
+            source="Founder, Islanema Film Academy"
           />
         </div>
       </Section>
       
-      {/* Call to Action with updated button styling */}
+      {/* Call to Action */}
       <CallToActionBanner 
         title="Be Part of the Change"
         description="Support the development of a new generation of Muslim filmmakers who will transform media representation through faith-based, ethical storytelling."
