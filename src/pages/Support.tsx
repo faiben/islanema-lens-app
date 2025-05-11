@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Section from '@/components/Section';
@@ -18,9 +18,14 @@ const Support = () => {
         <div className="container mx-auto px-6 py-12">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Support the Vision</h1>
-            <p className="text-xl">
+            <p className="text-xl mb-8">
               Join us in transforming media representation and cultivating the next generation of Muslim storytellers
             </p>
+            <Link to="/support-form">
+              <Button size="lg" className="bg-white hover:bg-islanema-blue text-islanema-blue hover:text-white">
+                Get Involved Now
+              </Button>
+            </Link>
           </div>
         </div>
       </Section>
@@ -114,9 +119,11 @@ const Support = () => {
                 </li>
               </ul>
               <div className="text-center">
-                <Button className="bg-islanema-green hover:bg-islanema-blue text-white">
-                  Donate Now
-                </Button>
+                <Link to="/support-form">
+                  <Button className="bg-islanema-green hover:bg-islanema-blue text-white">
+                    Donate Now
+                  </Button>
+                </Link>
               </div>
             </Card>
             
@@ -150,9 +157,11 @@ const Support = () => {
                 </li>
               </ul>
               <div className="text-center">
-                <Button className="bg-islanema-gold hover:bg-islanema-blue text-islanema-blue hover:text-white">
-                  Become a Mentor
-                </Button>
+                <Link to="/support-form">
+                  <Button className="bg-islanema-gold hover:bg-islanema-blue text-islanema-blue hover:text-white">
+                    Become a Mentor
+                  </Button>
+                </Link>
               </div>
             </Card>
             
@@ -186,9 +195,11 @@ const Support = () => {
                 </li>
               </ul>
               <div className="text-center">
-                <Button className="bg-islanema-blue hover:bg-islanema-green text-white">
-                  Get Involved
-                </Button>
+                <Link to="/support-form">
+                  <Button className="bg-islanema-blue hover:bg-islanema-green text-white">
+                    Get Involved
+                  </Button>
+                </Link>
               </div>
             </Card>
           </div>
@@ -330,11 +341,13 @@ const Support = () => {
             </div>
           </div>
           
-          <Button 
-            className="bg-islanema-gold hover:bg-white text-islanema-blue hover:text-islanema-blue text-lg px-8 py-6 h-auto"
-          >
-            Schedule a Conversation
-          </Button>
+          <Link to="/support-form">
+            <Button 
+              className="bg-islanema-gold hover:bg-white text-islanema-blue hover:text-islanema-blue text-lg px-8 py-6 h-auto"
+            >
+              Complete Support Form
+            </Button>
+          </Link>
         </div>
       </Section>
       
