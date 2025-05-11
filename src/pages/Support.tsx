@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -218,8 +219,11 @@ const Support = () => {
                 <li>• Newsletter updates</li>
                 <li>• Early access to student films</li>
               </ul>
-              <Button className="bg-islanema-green hover:bg-islanema-blue text-white w-full">
-                Become a Supporter
+              <Button 
+                className="bg-islanema-green hover:bg-islanema-blue text-white w-full transition-all duration-300 transform hover:scale-105"
+                asChild
+              >
+                <Link to="/support-form?level=supporter">Become a Supporter</Link>
               </Button>
             </Card>
             
@@ -232,8 +236,11 @@ const Support = () => {
                 <li>• Private screening invitations</li>
                 <li>• Annual impact report</li>
               </ul>
-              <Button className="bg-islanema-gold hover:bg-islanema-blue text-islanema-blue hover:text-white w-full">
-                Become a Patron
+              <Button 
+                className="bg-islanema-gold hover:bg-islanema-blue text-islanema-blue hover:text-white w-full transition-all duration-300 transform hover:scale-105"
+                asChild
+              >
+                <Link to="/support-form?level=patron">Become a Patron</Link>
               </Button>
             </Card>
             
@@ -247,8 +254,11 @@ const Support = () => {
                 <li>• VIP program events</li>
                 <li>• Special project involvement</li>
               </ul>
-              <Button className="bg-islanema-blue hover:bg-islanema-green text-white w-full">
-                Become a Founder
+              <Button 
+                className="bg-islanema-blue hover:bg-islanema-green text-white w-full transition-all duration-300 transform hover:scale-105"
+                asChild
+              >
+                <Link to="/support-form?level=founder">Become a Founder</Link>
               </Button>
             </Card>
           </div>
@@ -258,8 +268,12 @@ const Support = () => {
             <p className="text-gray-700 mb-4">
               We welcome partnerships with organizations that share our vision for transforming media representation. Custom partnership packages are available for media companies, educational institutions, and foundations.
             </p>
-            <Button variant="outline" className="border-islanema-green text-islanema-green hover:bg-islanema-green hover:text-white">
-              Contact Our Partnership Team
+            <Button 
+              variant="outline" 
+              className="border-islanema-green text-islanema-green hover:bg-islanema-green hover:text-white transition-all duration-300 transform hover:scale-105"
+              asChild
+            >
+              <Link to="/support-form?type=partnership">Contact Our Partnership Team</Link>
             </Button>
           </div>
         </div>
