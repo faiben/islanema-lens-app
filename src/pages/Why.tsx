@@ -250,7 +250,7 @@ const Why = () => {
           
           <FeaturedQuote 
             quote="We don't just need different stories; we need different storytellers—those who bring spiritual depth, cultural wisdom, and ethical frameworks to their creative work."
-            author="Ismail Abdullah"
+            author="Faical Benhaida"
             source="Founder, Islanema Film Academy"
           />
         </div>
