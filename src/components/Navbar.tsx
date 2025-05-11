@@ -26,7 +26,7 @@ const Navbar = () => {
           className="hidden md:block bg-islanema-gold hover:bg-islanema-green text-islanema-blue hover:text-white" 
           asChild
         >
-          <Link to="/contact">Get Involved</Link>
+          <Link to="/support-form">Get Involved</Link>
         </Button>
         
         <Button
@@ -61,7 +61,7 @@ const Navbar = () => {
               asChild
               onClick={() => setIsMenuOpen(false)}
             >
-              <Link to="/contact">Get Involved</Link>
+              <Link to="/support-form">Get Involved</Link>
             </Button>
           </div>
         </div>

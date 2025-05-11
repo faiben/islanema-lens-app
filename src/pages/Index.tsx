@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -269,7 +268,7 @@ const Index = () => {
         title="Join the Vision for the Future"
         description="Support our goal to establish a two-year film academy with a dedicated campus and scholarships for talented Muslim filmmakers worldwide."
         buttonText="Support Islanema"
-        buttonLink="/support"
+        buttonLink="/support-form"
         imageBackground={true}
       />
       
