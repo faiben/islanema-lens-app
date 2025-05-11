@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Section from '@/components/Section';
@@ -49,10 +49,16 @@ type SupportFormValues = z.infer<typeof supportFormSchema>;
 const SupportForm = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  
+  // Get parameters from URL if they exist
+  const levelParam = queryParams.get('level');
+  const typeParam = queryParams.get('type');
   
   const defaultValues: Partial<SupportFormValues> = {
-    supportType: "financial",
-    givingLevel: "none",
+    supportType: typeParam === 'partnership' ? 'financial' : (typeParam as "financial" | "professional" | "community" || "financial"),
+    givingLevel: levelParam as "supporter" | "patron" | "founder" | "partnership" | "none" || "none",
     involvementAreas: [],
   };
   
@@ -159,28 +165,58 @@ const SupportForm = () => {
                             defaultValue={field.value}
                             className="grid grid-cols-1 md:grid-cols-3 gap-4"
                           >
-                            <FormItem className="flex flex-col items-center space-y-3 rounded-md border p-4">
+                            <FormItem 
+                              className={`flex flex-col items-center space-y-3 rounded-md border-2 p-6 cursor-pointer transition-all duration-300 ${
+                                field.value === "financial" 
+                                  ? "border-islanema-green bg-islanema-green/5 shadow-md" 
+                                  : "border-gray-200 hover:border-islanema-green/50 hover:bg-islanema-green/5"
+                              }`}
+                              onClick={() => field.onChange("financial")}
+                            >
                               <FormControl>
                                 <RadioGroupItem value="financial" className="sr-only" />
                               </FormControl>
-                              <Heart className={`h-8 w-8 ${field.value === "financial" ? "text-islanema-green" : "text-gray-400"}`} />
-                              <FormLabel className={`font-medium ${field.value === "financial" ? "text-islanema-green" : ""}`}>Financial Support</FormLabel>
+                              <div className={`rounded-full p-4 ${field.value === "financial" ? "bg-islanema-green/20" : "bg-gray-100"}`}>
+                                <Heart className={`h-10 w-10 ${field.value === "financial" ? "text-islanema-green" : "text-gray-400"}`} />
+                              </div>
+                              <FormLabel className={`font-medium text-xl ${field.value === "financial" ? "text-islanema-green" : ""}`}>Financial Support</FormLabel>
+                              <p className="text-sm text-center text-gray-500">Donate to fund our programs, scholarships, and operations</p>
                             </FormItem>
                             
-                            <FormItem className="flex flex-col items-center space-y-3 rounded-md border p-4">
+                            <FormItem 
+                              className={`flex flex-col items-center space-y-3 rounded-md border-2 p-6 cursor-pointer transition-all duration-300 ${
+                                field.value === "professional" 
+                                  ? "border-islanema-gold bg-islanema-gold/5 shadow-md" 
+                                  : "border-gray-200 hover:border-islanema-gold/50 hover:bg-islanema-gold/5"
+                              }`}
+                              onClick={() => field.onChange("professional")}
+                            >
                               <FormControl>
                                 <RadioGroupItem value="professional" className="sr-only" />
                               </FormControl>
-                              <GraduationCap className={`h-8 w-8 ${field.value === "professional" ? "text-islanema-gold" : "text-gray-400"}`} />
-                              <FormLabel className={`font-medium ${field.value === "professional" ? "text-islanema-gold" : ""}`}>Professional Support</FormLabel>
+                              <div className={`rounded-full p-4 ${field.value === "professional" ? "bg-islanema-gold/20" : "bg-gray-100"}`}>
+                                <GraduationCap className={`h-10 w-10 ${field.value === "professional" ? "text-islanema-gold" : "text-gray-400"}`} />
+                              </div>
+                              <FormLabel className={`font-medium text-xl ${field.value === "professional" ? "text-islanema-gold" : ""}`}>Professional Support</FormLabel>
+                              <p className="text-sm text-center text-gray-500">Offer your expertise, mentorship, and industry connections</p>
                             </FormItem>
                             
-                            <FormItem className="flex flex-col items-center space-y-3 rounded-md border p-4">
+                            <FormItem 
+                              className={`flex flex-col items-center space-y-3 rounded-md border-2 p-6 cursor-pointer transition-all duration-300 ${
+                                field.value === "community" 
+                                  ? "border-islanema-blue bg-islanema-blue/5 shadow-md" 
+                                  : "border-gray-200 hover:border-islanema-blue/50 hover:bg-islanema-blue/5"
+                              }`}
+                              onClick={() => field.onChange("community")}
+                            >
                               <FormControl>
                                 <RadioGroupItem value="community" className="sr-only" />
                               </FormControl>
-                              <Users className={`h-8 w-8 ${field.value === "community" ? "text-islanema-blue" : "text-gray-400"}`} />
-                              <FormLabel className={`font-medium ${field.value === "community" ? "text-islanema-blue" : ""}`}>Community Support</FormLabel>
+                              <div className={`rounded-full p-4 ${field.value === "community" ? "bg-islanema-blue/20" : "bg-gray-100"}`}>
+                                <Users className={`h-10 w-10 ${field.value === "community" ? "text-islanema-blue" : "text-gray-400"}`} />
+                              </div>
+                              <FormLabel className={`font-medium text-xl ${field.value === "community" ? "text-islanema-blue" : ""}`}>Community Support</FormLabel>
+                              <p className="text-sm text-center text-gray-500">Volunteer your time, spread awareness, and help build our community</p>
                             </FormItem>
                           </RadioGroup>
                         </FormControl>
