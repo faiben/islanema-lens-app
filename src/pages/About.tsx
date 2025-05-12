@@ -173,7 +173,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <InfoCard 
               title="Who Can Apply"
-              description="Muslim creatives aged 20-35 with a passion for storytelling, demonstrated creative abilities, and commitment to faith-based work."
+              description="Muslim creatives aged 20-60 with a passion for storytelling, demonstrated creative abilities, and commitment to faith-based work."
               icon={<Users size={36} className="text-islanema-gold" />}
               className="bg-white"
             />
