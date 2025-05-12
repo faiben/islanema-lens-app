@@ -20,6 +20,7 @@ const Navbar = () => {
           <Link to="/why" className="hover:text-islanema-gold transition-colors">Why It Matters</Link>
           <Link to="/about" className="hover:text-islanema-gold transition-colors">About Islanema</Link>
           <Link to="/support" className="hover:text-islanema-gold transition-colors">Support</Link>
+          <Link to="/faq" className="hover:text-islanema-gold transition-colors">FAQ</Link>
         </div>
         
         <Button 
@@ -55,6 +56,9 @@ const Navbar = () => {
             </Link>
             <Link to="/support" className="hover:text-islanema-gold transition-colors" onClick={() => setIsMenuOpen(false)}>
               Support
+            </Link>
+            <Link to="/faq" className="hover:text-islanema-gold transition-colors" onClick={() => setIsMenuOpen(false)}>
+              FAQ
             </Link>
             <Button 
               className="w-full mt-2 bg-islanema-gold text-islanema-blue hover:bg-islanema-green hover:text-white" 
