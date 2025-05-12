@@ -137,19 +137,19 @@ const Why = () => {
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
                     <span className="text-islanema-terracotta mr-2">•</span>
-                    <span>70% of Muslim youth report feeling their faith is misunderstood by wider society</span>
+                    <span>Muslim youth report feeling their faith is misunderstood by wider society</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-islanema-terracotta mr-2">•</span>
-                    <span>63% have experienced discomfort with how Muslims are portrayed in media</span>
+                    <span>Many have experienced discomfort with how Muslims are portrayed in media</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-islanema-terracotta mr-2">•</span>
-                    <span>42% struggle to reconcile religious values with popular entertainment</span>
+                    <span>Struggle to reconcile religious values with popular entertainment</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-islanema-terracotta mr-2">•</span>
-                    <span>56% feel pressure to choose between cultural/religious identity and "fitting in"</span>
+                    <span>Feel pressure to choose between cultural/religious identity and "fitting in"</span>
                   </li>
                 </ul>
               </div>
@@ -159,19 +159,19 @@ const Why = () => {
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
                     <span className="text-islanema-green mr-2">•</span>
-                    <span>89% of young Muslims want to see more positive representation in media</span>
+                    <span>Young Muslims want to see more positive representation in media</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-islanema-green mr-2">•</span>
-                    <span>76% are interested in content that engages with faith in meaningful ways</span>
+                    <span>Interest in content that engages with faith in meaningful ways</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-islanema-green mr-2">•</span>
-                    <span>91% believe sharing authentic Muslim stories could reduce Islamophobia</span>
+                    <span>Belief that sharing authentic Muslim stories could reduce Islamophobia</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-islanema-green mr-2">•</span>
-                    <span>67% would pursue careers in media if they saw pathways that honored their values</span>
+                    <span>Willingness to pursue careers in media with pathways that honor their values</span>
                   </li>
                 </ul>
               </div>
