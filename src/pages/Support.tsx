@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -326,7 +325,7 @@ const Support = () => {
           
           <FeaturedQuote 
             quote="Your support isn't just funding an educational program—it's investing in a movement to transform how stories are told, how Muslims are represented, and how wisdom is shared through the powerful medium of film."
-            author="Ismail Abdullah"
+            author="Faical Benhaida"
             source="Founder, Islanema Film Academy"
           />
         </div>
