@@ -13,6 +13,8 @@ import SupportForm from "./pages/SupportForm";
 import StudentApplication from "./pages/StudentApplication";
 import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +33,8 @@ const App = () => (
           <Route path="/support-form" element={<SupportForm />} />
           <Route path="/apply" element={<StudentApplication />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfService />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
