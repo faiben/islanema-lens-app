@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -14,6 +15,9 @@ const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
+      
+      {/* ElevenLabs Conversational AI Widget */}
+      <elevenlabs-convai agent-id="agent_01jvjbkfq8evfssn6j7wvph4sv"></elevenlabs-convai>
       
       {/* Hero Section */}
       <div className="relative h-[90vh] min-h-[600px] flex items-center">
