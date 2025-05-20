@@ -4,7 +4,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Section from '@/components/Section';
 import StatCard from '@/components/StatCard';
-import FeaturedQuote from '@/components/FeaturedQuote';
 import { Tv, FilmIcon, Users, MessageSquare } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { Progress } from '@/components/ui/progress';
@@ -36,11 +35,12 @@ const Trends = () => {
             storytelling approaches, and the values being communicated through mainstream content.
           </p>
           
-          <FeaturedQuote 
-            quote="What we see on screens becomes part of our mental framework—affecting everything from self-perception to how we understand and interact with those different from ourselves."
-            author="Dr. Amina Rahman"
-            source="Media Representation Studies, Oxford"
-          />
+          {/* Removed FeaturedQuote and replaced with simple text */}
+          <div className="bg-islanema-cream p-8 rounded-lg text-center my-6">
+            <p className="text-lg italic text-islanema-blue">
+              Media representation shapes our perception of ourselves and society at large.
+            </p>
+          </div>
         </div>
       </Section>
       
