@@ -209,26 +209,10 @@ const Support = () => {
       {/* Giving Levels */}
       <Section title="Giving Levels">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <Card className="p-6 text-center shadow-md border-none bg-islanema-cream">
-              <h3 className="text-xl font-serif font-medium mb-2">Supporter</h3>
-              <p className="text-3xl font-bold text-islanema-green mb-6">$100-$999</p>
-              <ul className="text-left text-gray-700 space-y-2 mb-6">
-                <li>• Recognition on website</li>
-                <li>• Newsletter updates</li>
-                <li>• Early access to student films</li>
-              </ul>
-              <Button 
-                className="bg-islanema-green hover:bg-islanema-blue text-white w-full transition-all duration-300 transform hover:scale-105"
-                asChild
-              >
-                <Link to="/support-form?level=supporter">Become a Supporter</Link>
-              </Button>
-            </Card>
-            
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <Card className="p-6 text-center shadow-md border-none bg-gradient-to-b from-islanema-gold/10 to-islanema-gold/30">
               <h3 className="text-xl font-serif font-medium mb-2">Patron</h3>
-              <p className="text-3xl font-bold text-islanema-green mb-6">$1,000-$9,999</p>
+              <p className="text-3xl font-bold text-islanema-green mb-6">$10,000-$24,900</p>
               <ul className="text-left text-gray-700 space-y-2 mb-6">
                 <li>• All Supporter benefits</li>
                 <li>• Named recognition in program</li>
@@ -245,7 +229,7 @@ const Support = () => {
             
             <Card className="p-6 text-center shadow-md border-none bg-gradient-to-b from-islanema-blue/10 to-islanema-blue/30">
               <h3 className="text-xl font-serif font-medium mb-2">Founder</h3>
-              <p className="text-3xl font-bold text-islanema-green mb-6">$10,000+</p>
+              <p className="text-3xl font-bold text-islanema-green mb-6">$25,000+</p>
               <ul className="text-left text-gray-700 space-y-2 mb-6">
                 <li>• All Patron benefits</li>
                 <li>• Named scholarship opportunity</li>
