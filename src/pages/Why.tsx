@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Section from '@/components/Section';
-import FeaturedQuote from '@/components/FeaturedQuote';
 import { Card } from '@/components/ui/card';
 import { Heart, Globe, BookOpen, Sparkles, Users } from 'lucide-react';
 import CallToActionBanner from '@/components/CallToActionBanner';
@@ -36,11 +35,12 @@ const Why = () => {
             cultural identity, and social cohesion.
           </p>
           
-          <FeaturedQuote 
-            quote="He who controls the narrative controls the destiny of a people. Our duty is not merely to critique existing stories, but to tell our own with beauty, wisdom, and excellence."
-            author="Sheikh Hamza Yusuf"
-            source="Islamic Media Conference, 2019"
-          />
+          {/* Removed FeaturedQuote component */}
+          <div className="bg-islanema-cream p-8 rounded-lg text-center my-6">
+            <p className="text-lg italic text-islanema-blue">
+              Authentic storytelling is essential for preserving cultural identity and fostering understanding.
+            </p>
+          </div>
         </div>
       </Section>
       
@@ -178,11 +178,12 @@ const Why = () => {
             </div>
           </div>
           
-          <FeaturedQuote 
-            quote="When young people don't see themselves represented in the stories that shape our culture, they begin to question their place in that culture. Media representation isn't just about inclusion—it's about belonging."
-            author="Dr. Nadia Ahmed"
-            source="Youth Identity Research Institute"
-          />
+          {/* Removed FeaturedQuote component */}
+          <div className="bg-islanema-cream p-8 rounded-lg text-center my-6">
+            <p className="text-lg italic text-islanema-blue">
+              Representation in media is crucial for developing a sense of belonging in society.
+            </p>
+          </div>
         </div>
       </Section>
       
@@ -194,9 +195,7 @@ const Why = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="p-6 border-none shadow-md">
               <p className="italic text-gray-600 mb-4">
-                "The stories we consume shape our imagination of what's possible. When Muslims are consistently 
-                portrayed as 'the other,' it not only distorts how others see us but limits how we see ourselves. 
-                Reclaiming our narrative tradition is both a spiritual and cultural imperative."
+                "Media shapes how we perceive ourselves and others. Authentic representation is essential for fostering understanding and empathy across cultural differences."
               </p>
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-islanema-blue flex items-center justify-center text-white font-serif text-xl">
@@ -211,9 +210,7 @@ const Why = () => {
             
             <Card className="p-6 border-none shadow-md">
               <p className="italic text-gray-600 mb-4">
-                "Media doesn't just reflect our world—it actively shapes it. By training a generation of 
-                Muslim filmmakers grounded in both technical excellence and spiritual wisdom, we can 
-                transform the cultural landscape and revive a tradition of ethical storytelling."
+                "Ethical storytelling has the power to transform perceptions and build bridges between communities, creating space for meaningful dialogue and mutual respect."
               </p>
               <div className="flex items-center">
                 <div className="h-12 w-12 rounded-full bg-islanema-green flex items-center justify-center text-white font-serif text-xl">
@@ -248,11 +245,12 @@ const Why = () => {
             </Button>
           </div>
           
-          <FeaturedQuote 
-            quote="We don't just need different stories; we need different storytellers—those who bring spiritual depth, cultural wisdom, and ethical frameworks to their creative work."
-            author="Faical Benhaida"
-            source="Founder, Islanema Film Academy"
-          />
+          {/* Removed FeaturedQuote component */}
+          <div className="bg-islanema-cream p-8 rounded-lg text-center my-6">
+            <p className="text-lg italic text-islanema-blue">
+              Training spiritually-grounded filmmakers is key to transforming media representation.
+            </p>
+          </div>
         </div>
       </Section>
       

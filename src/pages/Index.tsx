@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -6,7 +7,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Section from '@/components/Section';
 import StatCard from '@/components/StatCard';
-import FeaturedQuote from '@/components/FeaturedQuote';
 import InfoCard from '@/components/InfoCard';
 import CallToActionBanner from '@/components/CallToActionBanner';
 
@@ -75,11 +75,12 @@ const Index = () => {
           </div>
           
           <div>
-            <FeaturedQuote 
-              quote="The images we consume shape our understanding of reality, our sense of identity, and ultimately our relationship with the Divine."
-              author="Dr. Sarah Hashmi"
-              source="Media & Islamic Ethics Forum"
-            />
+            {/* Removed FeaturedQuote component */}
+            <div className="bg-islanema-cream p-8 rounded-lg">
+              <p className="text-center text-gray-700 italic">
+                Media shapes our perceptions and understanding of the world around us.
+              </p>
+            </div>
           </div>
         </div>
       </Section>
