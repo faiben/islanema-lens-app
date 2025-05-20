@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
@@ -36,7 +35,7 @@ const supportFormSchema = z.object({
   supportType: z.enum(["financial", "professional", "community"], {
     required_error: "Please select a way you'd like to support.",
   }),
-  givingLevel: z.enum(["supporter", "patron", "founder", "partnership", "none"], {
+  givingLevel: z.enum(["patron", "founder", "partnership", "none"], {
     required_error: "Please select a giving level."
   }).default("none"),
   amount: z.string().optional(),
@@ -58,7 +57,7 @@ const SupportForm = () => {
   
   const defaultValues: Partial<SupportFormValues> = {
     supportType: typeParam === 'partnership' ? 'financial' : (typeParam as "financial" | "professional" | "community" || "financial"),
-    givingLevel: levelParam as "supporter" | "patron" | "founder" | "partnership" | "none" || "none",
+    givingLevel: levelParam as "patron" | "founder" | "partnership" | "none" || "none",
     involvementAreas: [],
   };
   
@@ -241,24 +240,12 @@ const SupportForm = () => {
                               >
                                 <FormItem className="flex items-start space-x-3 space-y-0 rounded-md border p-4">
                                   <FormControl>
-                                    <RadioGroupItem value="supporter" />
-                                  </FormControl>
-                                  <div className="space-y-1">
-                                    <FormLabel className="text-base font-medium">Supporter ($100-$999)</FormLabel>
-                                    <FormDescription>
-                                      Recognition on website, newsletter updates, early access to student films
-                                    </FormDescription>
-                                  </div>
-                                </FormItem>
-                                
-                                <FormItem className="flex items-start space-x-3 space-y-0 rounded-md border p-4">
-                                  <FormControl>
                                     <RadioGroupItem value="patron" />
                                   </FormControl>
                                   <div className="space-y-1">
-                                    <FormLabel className="text-base font-medium">Patron ($1,000-$9,999)</FormLabel>
+                                    <FormLabel className="text-base font-medium">Patron ($10,000-$24,900)</FormLabel>
                                     <FormDescription>
-                                      All Supporter benefits, named recognition in program, private screening invitations, annual impact report
+                                      Named recognition in program, private screening invitations, annual impact report
                                     </FormDescription>
                                   </div>
                                 </FormItem>
@@ -268,7 +255,7 @@ const SupportForm = () => {
                                     <RadioGroupItem value="founder" />
                                   </FormControl>
                                   <div className="space-y-1">
-                                    <FormLabel className="text-base font-medium">Founder ($10,000+)</FormLabel>
+                                    <FormLabel className="text-base font-medium">Founder ($25,000+)</FormLabel>
                                     <FormDescription>
                                       All Patron benefits, named scholarship opportunity, advisory board consideration, VIP program events
                                     </FormDescription>
